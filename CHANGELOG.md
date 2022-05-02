@@ -1,3 +1,31 @@
+## [3.16.5](https://github.com/spaceship-prompt/spaceship-prompt/compare/v3.16.4...v3.16.5) (2022-03-28)
+
+
+### Bug Fixes
+
+* support CLOUDSDK_CONFIG env ([#1122](https://github.com/spaceship-prompt/spaceship-prompt/issues/1122)) ([6358eaf](https://github.com/spaceship-prompt/spaceship-prompt/commit/6358eaff0a2ad954445c169335d89ef00602aee1)), closes [#1117](https://github.com/spaceship-prompt/spaceship-prompt/issues/1117)
+
+## [3.16.4](https://github.com/spaceship-prompt/spaceship-prompt/compare/v3.16.3...v3.16.4) (2022-02-24)
+
+
+### Bug Fixes
+
+* **readme:** Add notice about Ukraine ([93f328f](https://github.com/spaceship-prompt/spaceship-prompt/commit/93f328ffc049ac0c847d697b0792487b616f4496))
+
+## [3.16.3](https://github.com/spaceship-prompt/spaceship-prompt/compare/v3.16.2...v3.16.3) (2022-02-16)
+
+
+### Bug Fixes
+
+* set proper message if no account ([#1099](https://github.com/spaceship-prompt/spaceship-prompt/issues/1099)) ([15d2279](https://github.com/spaceship-prompt/spaceship-prompt/commit/15d227994e003a9a3ddd30596f8a675acc212f29))
+
+## [3.16.2](https://github.com/spaceship-prompt/spaceship-prompt/compare/v3.16.1...v3.16.2) (2022-01-15)
+
+
+### Bug Fixes
+
+* don't show docker section when using colima ([#1101](https://github.com/spaceship-prompt/spaceship-prompt/issues/1101)) ([9b6e88b](https://github.com/spaceship-prompt/spaceship-prompt/commit/9b6e88b0d2c1d76961c59c1f5476830a2ce44293))
+
 ## [3.16.1](https://github.com/spaceship-prompt/spaceship-prompt/compare/v3.16.0...v3.16.1) (2021-11-05)
 
 
