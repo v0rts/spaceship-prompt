@@ -8,7 +8,7 @@
 
 # Current version of Spaceship
 # Useful for issue reporting
-export SPACESHIP_VERSION='4.13.3'
+export SPACESHIP_VERSION='4.18.0'
 
 # Set SPACESHIP_ROOT if it isn't defined yet or if the directory does
 # not exist anymore (e.g. after an update to a newer version)
@@ -44,7 +44,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     user           # Username section
     dir            # Current directory section
     host           # Hostname section
-    git            # Git section (git_branch + git_status)
+    git            # Git section (git_branch + git_status + [git_commit](default off))
     hg             # Mercurial section (hg_branch  + hg_status)
     package        # Package version
     node           # Node.js section
@@ -52,6 +52,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     deno           # Deno section
     ruby           # Ruby section
     python         # Python section
+    red            # Red section
     elm            # Elm section
     elixir         # Elixir section
     xcode          # Xcode section
@@ -75,12 +76,14 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     azure          # Azure section
     venv           # virtualenv section
     conda          # conda virtualenv section
+    uv             # uv virtualenv section
     dotnet         # .NET section
     ocaml          # OCaml section
     vlang          # V section
     zig            # Zig section
     purescript     # PureScript section
     erlang         # Erlang section
+    gleam          # Gleam section
     kubectl        # Kubectl context section
     ansible        # Ansible section
     terraform      # Terraform workspace section
@@ -110,6 +113,7 @@ SPACESHIP_PROMPT_ASYNC="${SPACESHIP_PROMPT_ASYNC=true}"
 SPACESHIP_PROMPT_ADD_NEWLINE="${SPACESHIP_PROMPT_ADD_NEWLINE=true}"
 SPACESHIP_PROMPT_SEPARATE_LINE="${SPACESHIP_PROMPT_SEPARATE_LINE=true}"
 SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="${SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=false}"
+SPACESHIP_RPROMPT_FIRST_PREFIX_SHOW="${SPACESHIP_RPROMPT_FIRST_PREFIX_SHOW=false}"
 SPACESHIP_PROMPT_PREFIXES_SHOW="${SPACESHIP_PROMPT_PREFIXES_SHOW=true}"
 SPACESHIP_PROMPT_SUFFIXES_SHOW="${SPACESHIP_PROMPT_SUFFIXES_SHOW=true}"
 SPACESHIP_PROMPT_DEFAULT_PREFIX="${SPACESHIP_PROMPT_DEFAULT_PREFIX="via "}"
@@ -122,6 +126,7 @@ SPACESHIP_PROMPT_DEFAULT_SUFFIX="${SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "}"
 
 SPACESHIP_LIBS=(
   "lib/utils.zsh"   # General porpuse utils
+  "lib/extract.zsh" # Data extraction utils
   "lib/cache.zsh"   # Cache utils
   "lib/worker.zsh"  # Async worker
   "lib/hooks.zsh"   # Zsh hooks

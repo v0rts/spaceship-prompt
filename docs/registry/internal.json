@@ -128,6 +128,18 @@
       "internal": true
     },
     {
+      "name": "git_commit",
+      "url": "https://spaceship-prompt.sh/sections/git/#git-commit-git_commit",
+      "description": "The current Git commit hash.",
+      "internal": true
+    },
+    {
+      "name": "gleam",
+      "url": "https://spaceship-prompt.sh/sections/gleam",
+      "description": "The current version of Gleam.",
+      "internal": true
+    },
+    {
       "name": "golang",
       "url": "https://spaceship-prompt.sh/sections/golang",
       "description": "The version of the Go.",
@@ -266,6 +278,12 @@
       "internal": true
     },
     {
+      "name": "red",
+      "url": "https://spaceship-prompt.sh/sections/red",
+      "description": "The version of the Red binary.",
+      "internal": true
+    },
+    {
       "name": "ruby",
       "url": "https://spaceship-prompt.sh/sections/ruby",
       "description": "The version of Ruby binary.",
@@ -311,6 +329,12 @@
       "name": "user",
       "url": "https://spaceship-prompt.sh/sections/user",
       "description": "The current user's username.",
+      "internal": true
+    },
+    {
+      "name": "uv",
+      "url": "https://spaceship-prompt.sh/sections/uv",
+      "description": "The uv workflow tool.",
       "internal": true
     },
     {
